@@ -1,17 +1,21 @@
 
+![frontespizio](https://github.com/user-attachments/assets/b987c500-c785-46c2-bc8c-e8b26a7d9305)
+
 
 # PhD_Thesis_Data
-This repository contains the instances used in the study of optimization problems presented in my doctoral thesis. Each instance is carefully documented and organized to facilitate replication and further research.
+This repository contains the instances used in the study of optimization problems presented in my PhD thesis. 
+Each instance is carefully documented and organized to facilitate replication and further research.
 
 # Contents
 - **Instances**: All the datasets and problem instances used in the thesis.
-- **Documentation**: Detailed descriptions of each instance, including their sources and any preprocessing steps applied.
+- **Documentation**: Descriptions of each instance.
 
 # Usage
-To use the instances, you can simply navigate to the instances folder. The folder
-and follow the instructions in the documentation folder.
-cd [Chapter 1] - Exact and Heuristic Solutions for the Stock Allocation Problem with FIFO Picking Operations
-cd [Chapter 2] - An Integrated Goal Programming and Chance Constrained Optimization Approach for Production Planning with Uncertain Demand
+To use the instances, you can simply navigate to the instances folder. 
+In each folder you can find the Instances Data and Readme file with the descriptions of each instances.
+The data is divided into two main folders which reflect the two problems studied in the PhD thesis:
+-  [Chapter 1](https://github.com/Fepeder/PhD_Thesis_Data/tree/5b4ccf8c946121020e02e42c0f2c68a53ecffd06/Chapter%201): Exact and Heuristic Solutions for the Stock Allocation Problem with FIFO Picking Operations
+-  [Chapter 2](https://github.com/Fepeder/PhD_Thesis_Data/tree/5b4ccf8c946121020e02e42c0f2c68a53ecffd06/Chapter%202): An Integrated Goal Programming and Chance Constrained Optimization Approach for Production Planning with Uncertain Demand
 
 # Terms of Use
 The instances and data contained in this repository are provided for research and study purposes.
