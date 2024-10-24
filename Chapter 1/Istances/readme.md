@@ -1,17 +1,12 @@
 # Description of the instance
 
+The stucture of each istnace is the follow:
 
-- Number of Sku:7
-- Code of Sku: 15753 15756 9398 646 6597 9410 15934
-- Number of Bins: 23
-- Number of Time: 2
-- Initial Stock for Sku: 552 217 1193 538 397 906 1240
-- Production expected for Sku: 0 0 0 0 0 1524 0
-- Outbound expected for Sku: 10 5 247 105 122 1036 252
-- Matrix Bin Capacity for Sku: 0 0 0 0 0 0 0 360 360 360 0 450 0 405 405 405 270 405 270 405 270 405 270
-                               0 0 0 0 0 0 0 480 480 480 0 600 0 540 540 540 360 540 360 540 360 540 360
-                               780 780 845 720 720 960 0 480 480 480 0 600 0 480 480 480 360 480 360 480 360 480 360
-                               0 0 0 0 0 0 0 480 480 480 0 600 0 480 480 480 360 480 360 480 360 480 360
-                               0 0 0 0 0 0 0 480 480 480 0 600 0 540 540 540 360 540 360 540 360 540 360
-                               780 780 845 720 720 960 0 480 480 480 0 600 0 480 480 480 360 480 360 480 360 480 360
-                               0 0 0 0 0 960 0 480 480 480 0 570 0 510 510 510 330 510 330 510 330 510 330
+- Line 1: Number of Sku | Type: Number
+- Line 2: Code of Sku | Type: Text
+- Line 3: Number of Bins | Type: Number
+- Line 4: Number of Time | Type: Number
+- Line 5: Initial Stock for Sku | Type: Number
+- Line 6: Production expected for Sku | Type: Number
+- Line 7: Outbound expected for Sku | Type: Number
+- From Line 8 ti Line 14:  7x23 Matrix Bin Capacity for Sku | Type: Number
