@@ -4,6 +4,6 @@ Model results for production shifts were used to calculate ending stock versus a
 This final stock was valued compared to the final stock obtained by the company to compare the solutions but was not used as the starting stock for the following month. 
 The folders contain the instances used to solve the model both before and after the fine tuning process.
 
--[Before fine tuning]()
+- [Before fine tuning](https://github.com/Fepeder/PhD_Thesis_Data/tree/main/Chapter%202/TACTICAL%20LEVEL/SM/Before%20Fine%20Tuning)
 
--[After fine tuning]()
+- [After fine tuning](https://github.com/Fepeder/PhD_Thesis_Data/tree/main/Chapter%202/TACTICAL%20LEVEL/SM/After%20Fine%20Tuning)
