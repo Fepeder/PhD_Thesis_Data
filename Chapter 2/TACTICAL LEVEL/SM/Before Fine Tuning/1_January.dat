@@ -1,0 +1,64 @@
+set Prod := A B C D E F; #products
+set Mach := multi mono; #Bottling lines
+
+
+param resa: A B C D E F:=
+multi 0 205 191 195 167 188
+mono 278 0 265 0 0 0;
+
+param turni :=
+multi 63
+mono 63;
+
+param turni_max :=
+multi 63
+mono 63;
+
+param Stock_iniziale :=
+A 3259
+B 2233
+C 669
+D 2539
+E 499
+F 808;
+
+param Percentile :=
+A 14613
+B 4916
+C 3758
+D 1832
+E 1652
+F 516;
+
+param obiettivo :=
+A 3000
+B 1500
+C 850
+D 1400
+E 650
+F 300;
+
+param Costo :=
+multi 48
+mono 40;
+
+param Costo_extra :=
+multi 62.39
+mono 52;
+
+
+param pen :=
+A 17.39
+B 30.43
+C 10.87
+D 13.04
+E 10
+F 8.69;
+
+param over :=
+A 1
+B 0.74
+C 1
+D 0.43
+E 1.08
+F 0.34;
