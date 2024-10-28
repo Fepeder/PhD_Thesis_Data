@@ -10,3 +10,6 @@ The stucture of each istnace is the follow:
 - Line 6: Production expected for Sku | Type: Number
 - Line 7: Outbound expected for Sku | Type: Number
 - From Line 8 ti Line 14:  7x23 Matrix Bin Capacity for Sku | Type: Number
+
+
+[🔙](https://github.com/Fepeder/PhD_Thesis_Data/tree/main/Chapter%201/)
