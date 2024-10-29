@@ -11,8 +11,8 @@ Each instance is carefully documented and organized to facilitate replication an
 - **Documentation**: Descriptions of each instance.
 
 # Usage
-To use the instances, you can simply navigate to the instances folder. 
-In each folder you can find the Instances Data and Readme file with the descriptions of each instances.
+To use the instances, you can simply navigate to the instances folders. 
+In each folder you can find the Instances Data and Readme file with the descriptions.
 The data is divided into two main folders which reflect the two problems studied in the PhD thesis:
 -  [Chapter 1](https://github.com/Fepeder/PhD_Thesis_Data/tree/main/Chapter%201): Exact and Heuristic Solutions for the Stock Allocation Problem with FIFO Picking Operations
 -  [Chapter 2](https://github.com/Fepeder/PhD_Thesis_Data/tree/main/Chapter%202): An Integrated Goal Programming and Chance Constrained Optimization Approach for Production Planning with Uncertain Demand
