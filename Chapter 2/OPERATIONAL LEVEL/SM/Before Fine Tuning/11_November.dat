@@ -1,0 +1,105 @@
+set Prod := A B C D E F; #prodotti_i
+set Prod2 := A B C D E F; #prodotti_j
+set Mach := multi mono; #linee
+set Day:= 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25; #Giorni
+set Day2:= 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25; #Giorni2
+
+param resa: A B C D E F:=
+multi 0.0001 205 191 195 167 188
+mono 278 0.0001 265 0.0001 0.0001 0.0001;
+
+param turni: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25:=
+multi 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+mono 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3;
+
+param costo: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25:=
+multi 48 48 62.3913 48 48 48 48 48 62.3913 48 48 48 48 48 62.3913 48 48 48 48 48 62.3913 48 48 48 48
+mono 40 40 52 40 40 40 40 40 52 40 40 40 40 40 52 40 40 40 40 40 52 40 40 40 40;
+
+
+param Stock_iniziale :=
+A 2965
+B 2741
+C 1539
+D 2138
+E 667
+F 286;
+
+param Stock_Finale :=
+A 3000
+B 1500
+C 850
+D 1400
+E 650
+F 300;
+
+param Percentile: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25:=
+A 659 659 0 659 659 659 659 659 0 659 659 659 659 659 0 659 659 659 659 659 0 659 659 659 659
+B 236 236 0 236 236 236 236 236 0 236 236 236 236 236 0 236 236 236 236 236 0 236 236 236 236
+C 141 141 0 141 141 141 141 141 0 141 141 141 141 141 0 141 141 141 141 141 0 141 141 141 141
+D 136 136 0 136 136 136 136 136 0 136 136 136 136 136 0 136 136 136 136 136 0 136 136 136 136
+E 53 53 0 53 53 53 53 53 0 53 53 53 53 53 0 53 53 53 53 53 0 53 53 53 53
+F 24 24 0 24 24 24 24 24 0 24 24 24 24 24 0 24 24 24 24 24 0 24 24 24 24;
+
+
+param Setup:=
+multi A A 0 mono A A 0
+multi A B 0 mono A B 0
+multi A C 0 mono A C 67
+multi A D 0 mono A D 0
+multi A E 0 mono A E 0
+multi A F 0 mono A F 0
+multi B A 0 mono B A 0
+multi B B 0 mono B B 0
+multi B C 105 mono B C 0
+multi B D 74 mono B D 0
+multi B E 63 mono B E 0
+multi B F 71 mono B F 0
+multi C A 0 mono C A 67
+multi C B 76 mono C B 0
+multi C C 0 mono C C 0
+multi C D 74 mono C D 0
+multi C E 42 mono C E 0
+multi C F 71 mono C F 0
+multi D A 0 mono D A 0
+multi D B 75 mono D B 0
+multi D C 71 mono D C 0
+multi D D 0 mono D D 0
+multi D E 63 mono D E 0
+multi D F 47 mono D F 0
+multi E A 0 mono E A 0
+multi E B 75 mono E B 0
+multi E C 48 mono E C 0
+multi E D 74 mono E D 0
+multi E E 0 mono E E 0
+multi E F 71 mono E F 0
+multi F A 0 mono F A 0
+multi F B 75 mono F B 0
+multi F C 71 mono F C 0
+multi F D 49 mono F D 0
+multi F E 63 mono F E 0
+multi F F 0 mono F F 0;
+
+param min_prod: A B C D E F:=
+multi 0 205 191 195 167 188
+mono 556 0 530 0 0 0;
+
+param max_prod: A B C D E F:=
+multi 0 615 573 585 501 564
+mono 834 0 795 0 0 0;
+
+param pen :=
+A 17.39
+B 30.43
+C 10.87
+D 13.04
+E 10
+F 8.69;
+
+param over :=
+A 1
+B 0.74
+C 1
+D 0.43
+E 1.08
+F 0.34;
