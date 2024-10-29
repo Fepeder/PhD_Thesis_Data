@@ -1,0 +1,65 @@
+set Prod := A B C D E F; #prodotti
+set Mach := multi mono; #linee
+set Time :=  10 11 12; #mesi
+set Time2 :=  11 12; #mesi2
+
+param resa: A B C D E F:=
+multi 0 205 191 195 167 188
+mono 278 0 265 0 0 0;
+
+param turni: 10 11 12:=
+multi  66 63 54
+mono  66 63 54;
+
+param turni_max: 10 11 12:=
+multi  66 63 54
+mono  66 63 54;
+
+param Stock_iniziale :=
+A 2936
+B 1734
+C 1294
+D 2773
+E 871
+F 1627;
+
+param Percentile: 10 11 12:=
+A 11357 13822 10656
+B 4994 4936 4507
+C 4665 2959 3024
+D 2207 2839 2110
+E 1795 1101 1121
+F 544 500 494;
+
+param obiettivo: 10 11 12:=
+A 3000 3000 3000
+B 1500 1500 1500
+C 850 850 850
+D 1400 1400 1400
+E 650 650 650
+F 300 300 300;
+
+param Costo :=
+multi 48
+mono 40;
+
+param Costo_extra :=
+multi 62.39
+mono 52;
+
+
+param pen :=
+A 17.39
+B 30.43
+C 10.87
+D 13.04
+E 10
+F 8.69;
+
+param over :=
+A 1
+B 0.74
+C 1
+D 0.43
+E 1.08
+F 0.34;
